@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("#btn1").click(function()
+    { 
+        $("ol").before("<b>Before</b>");
+    });
+
+    $("#btn2").click(function()
+    { 
+        $("ol").after("<li>After</li>");
+    });
+
+    //ESTOS SE SITUAN FUERA DE LA ETIQUETA, EN ESTE CASO FUERA DEL OL
+});
+
+    </script>
+
+</head>
+<body>
+    
+<ol>
+    <li>ELEMENTO 1</li>
+    <li>ELEMENTO 2</li>
+    <li>ELEMENTO 3</li>
+</ol>
+
+<button id="btn1">INSERT BEFORE</button>
+<button id="btn2">INSERT AFTER</button>
+
+</body>
+</html>

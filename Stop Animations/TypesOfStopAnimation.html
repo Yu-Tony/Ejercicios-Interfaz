@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("#start").click(function()
+    { 
+        $("#div").animate({left: '100px'},5000);
+        $("#div").animate({fontSize:'3em'},5000);
+
+    });
+
+    $("#stop").click(function()
+    { 
+        $("#panel1").stop();
+
+    });
+    //DETIENE LA ANIMACION INMEDIATA, SOLO LA QUE ESTA EN ESE INSTANTE AKA SOLO LA PRIMERA
+    //SE PUEDEN DETENER TODOS SI SE DA CLICK VARIAS VECES
+
+    $("#stop2").click(function()
+    { 
+        $("#panel1").stop(true);
+
+    });
+    //ENVIAR CON UN PARAMETRO TRUE DETIENE TODAS LAS ANIMACIONES
+
+    $("#stop3").click(function()
+    { 
+        $("#panel1").stop(true,true);
+
+    });
+   //STOP CON DOS BOOL, TERMINA LA ANIMACION PERO NO DEJA QUE SE EJECUTE
+   //SI EL PRIMERO ES FALSO ES COMO EL DE ARRIBA (CON TRUE DETIENE TODOS)
+   //SI AMBOS SON TRUE ES DETENER TODAS LAS ANIMACIONES MAS LLEVAR AL FINAL
+   //FALSE TRUE LLEVA HACE QUE NO SE DETENGA LA ANIMACION PERO LLEVA AL FINAL 
+
+});
+
+    </script>
+
+
+</head>
+<body>
+   
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+    <button id="stop2">STOP ALL</button>
+    <button id="stop3">STOP BUT FINISH</button>
+<div id="flip1"> click to slide down panel</div>
+<div id="panel1">HELLO WORLD</div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("#hide").click(function()
+    {
+        $("p").hide();
+    });
+    //Ocultar los elementos con display none
+
+    $("#show").click(function()
+    {
+        $("p").show();
+    });
+    //Mostrar los elementos con display block
+
+});
+
+    </script>
+
+</head>
+<body>
+    
+    <p>If u click on hide elements will hide</p>
+  <button id="hide">HIDE</button>
+  <button id="show">SHOW</button>
+
+</body>
+</html>

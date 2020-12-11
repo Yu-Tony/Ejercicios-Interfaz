@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        .rojo
+        {
+            border: 2px red solid;
+        }
+
+        .azul
+        {
+            border: 2px blue solid;
+        }
+
+        .verde
+        {
+            border: 2px green solid;
+        }
+
+        .amarillo
+        {
+            border: 2px yellow solid;
+        }
+    </style>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("#p1").mouseenter(function()
+            {
+                alert("EVENTO MOUSE ENTER");
+            }
+            );
+            //EL CURSOR ENTRA AL P
+
+            $("#p2").mouseleave(function()
+            {
+                alert("EVENTO MOUSE LEAVE");
+            }
+            );
+            //EL CURSOR SALE DEL P
+
+            $("#p3").mousedown(function()
+            {
+                alert("EVENTO MOUSE DOWN");
+            }
+            );
+            //CUANDO SE PRESIONA EL BOTON
+
+            $("#p4").mouseup(function()
+            {
+                alert("EVENTO MOUSE UP");
+            }
+            );
+            //CUANDO SALE EL BOTON
+        }
+        );
+    </script>
+</head>
+<body>
+
+    <p id="p1" class="rojo">EVENTO MOUSE ENTER</p>
+    <p id="p2" class="azul">EVENTO MOUSE LEAVE</p>
+    <p id="p3" class="verde">EVENTO MOUSE DOWN</p>
+    <p id="p4" class="amarillo">EVENTO MOUSE UP</p>
+    
+</body>
+</html>

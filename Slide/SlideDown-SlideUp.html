@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("#flip1").click(function()
+    { 
+        $("#panel1").slideDown("slow");
+
+    });
+    //HACE LO MISMO QUE EL FADE IN PERO SE ASEGURA EN GENERAR LA ESCALA
+    //CAMBIA PADDING SUPERIOR, PADDING INFERIOR Y ALTURA
+
+    $("#flip2").click(function()
+    { 
+        $("#panel2").slideUp("slow");
+
+    });
+     
+    
+
+});
+
+    </script>
+
+    <style>
+        #panel1, #panel2, #flip1, #flip2
+        {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel1
+        {
+            padding: 50px;
+            display: none;
+        }
+
+        #panel2
+        {
+            padding: 50px;
+        }
+    </style>
+
+</head>
+<body>
+   
+<div id="flip1"> click to slide down panel</div>
+<div id="panel1">HELLO WORLD</div>
+<br>
+<div id="flip2"> click to slide up panel</div>
+<div id="panel2">HELLO WORLD</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("#btn1").click(function()
+    { 
+        $("p").append("<b>Texto append</b>");
+    });
+
+    $("#btn2").click(function()
+    { 
+        $("ol").append("<li>Elemento append</li>");
+    });
+
+//AGREGA ESO AL FINAL DEL ELMENTO, PERO DENTRO. EN ESTE CASO EL TEXTO APPEND ESTA DENTRO DEL P DE "ESTO ES UN PARRAFO"
+//EL OTRO AGREGA UN LI DENTRO DEL OL AL FINAL
+
+});
+
+    </script>
+
+</head>
+<body>
+    
+<p>ESTO ES UN PARRAFO</p>
+<p>ESTO ES OTRO PARRAFO</p>
+
+<ol>
+    <li>ELEMENTO 1</li>
+    <li>ELEMENTO 2</li>
+    <li>ELEMENTO 3</li>
+</ol>
+
+<button id="btn1">APPEND TEXTO</button>
+<button id="btn2">APPEND ELEMENTO</button>
+
+</body>
+</html>

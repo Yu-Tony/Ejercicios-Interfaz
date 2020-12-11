@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("#btn1").click(function()
+    {
+        $("#test1").text("Hello World");
+    });
+
+    $("#btn2").click(function()
+    {
+        $("#test2").html("<b>Hello World</b>");
+    });
+
+    $("#btn3").click(function()
+    {
+        $("#test3").val("Teb Soto");
+    });
+
+//AHORA COMO INLUYEN UN ELEMENTO TIENEN SOBRECARGA
+//PONER .TEXT SOLO REGRESA EL VALOR, PONER TEXT CON UN VALOR LE PONE ESE 
+});
+
+    </script>
+
+</head>
+<body>
+    
+    <p id='test1'>ESTO ES UN PARRAFO</p>
+    <p id='test2'>ESTO ES OTRO PARRAFO</p>
+
+    <p>INPUT FIELD: <input type="text" id="test3" value="Ry Soto"></p>
+
+    <button id="btn1">CAMBIAR TEXTO</button>
+    <button id="btn2">CAMBIAR HTML</button>
+    <button id="btn3">CAMBIAR VALOR</button>
+
+
+</body>
+</html>

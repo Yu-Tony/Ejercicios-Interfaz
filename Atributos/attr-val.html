@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("button").click(function()
+    {
+        $("#p1").attr("value", "Donghun");
+        $("#p2").attr(
+        {
+            "valorInventado" : "1",
+            "value" : "Yuchan"
+        }
+        );
+    });
+
+//ATRIBUTOS PARA OBTENERLO YA TENIA UN PARAMETRO, POR ESO A ESTE SE LE AGREGAN DOS
+//SE LE PONE EL VALUE DONGHUN AL PRESIONAR EL BOTON
+//SI SE QUIEREN PONER VARIOS DE UNO SOLO SE HACE CON JSON
+});
+
+    </script>
+
+</head>
+<body>
+    
+   <input type="text" id="p1" valorInventado="0" value="Primer parrafo"/>
+   <input type="text" id="p2" valorInventado="0" value="Segundo parrafo"/>
+
+    <button>CAMBIAR ATRIBUTOS</button>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .rojo
+        {
+            border: 2px red solid;
+        }
+    </style>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function()
+{
+    $("#p1").hover(function()
+    {
+        alert("EVENTO HOVER");
+    });
+    //Sobreponer a un p1
+
+
+    $("input").focus(function()
+    {
+        $(this).css("background-color", "#cccccc");
+    }); 
+    //Cuando esta enfocado/seleccionando uno
+
+    $("input").blur(function()
+    {
+        $(this).css("background-color", "#ffffff");
+    });
+    //Cuando se quita el focus
+
+});
+
+</script>
+</head>
+<body>
+    
+<p id="p1" class="rojo">Evento hover</p>
+
+Name: <input type="text" name="fullname"><br>
+Email <input type="text" name="email">
+
+</body>
+</html>

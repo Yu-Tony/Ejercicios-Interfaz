@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("button").click(function()
+    { 
+        $("#div1").empty();
+    });
+    //DE UN ELEMENTO SOLO BORRA SU CONTENIDO
+    //NO BORRA SU ETIQUETA, SOLO LO QUE ESTA DENTRO DE LA ETIQUETA
+});
+    </script>
+
+    <style>
+        .test
+        {
+            color:red;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+<div id="div1" style="border: 1px solid black;background-color: yellow;">
+    THIS IS SOME TEXT IN THE DIV
+    <p>THIS IS A PRARAGRAPH IN THE DIV</p>
+    <p>THIS IS NOTHER PARAGRAPH IN THE DIV</p>
+    <br>
+</div>
+
+
+
+<button>EMPTY THE DIV ELEMENT</button>
+
+</body>
+</html>

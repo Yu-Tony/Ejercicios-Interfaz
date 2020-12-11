@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function()
+{
+    $("button").click(function()
+    { 
+        $("#div1").fadeTo("slow", 0.15);
+        $("#div2").fadeTo("slow", 0.4);
+        $("#div3").fadeTo("slow", 0.7);
+
+    });
+   //FADE TO TRABAJA CON OPACITY
+   //A QUE OPACIDAD LLEGA
+
+});
+
+    </script>
+
+</head>
+<body>
+    
+    <p>fade in with different paremeters</p>
+ 
+    <button>Click to fade in boxes</button>
+
+    <div id="div1" style="width: 80px;height: 80px;display: none;background-color: red;"></div><br>
+    <div id="div2" style="width: 80px;height: 80px;background-color: green;"></div><br>
+    <div id="div3" style="width: 80px;height: 80px;display: none;background-color: blue;"></div>
+
+
+</body>
+</html>

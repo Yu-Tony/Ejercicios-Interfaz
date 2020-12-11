@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+
+//EL DOCUMENT READY SE EJECUTA CUANDO TERMINE DE CARGAR TODA LA PAGINA
+$(document).ready(function()
+{
+    $("button").click(function()
+    {
+        var div = $("div");
+       
+        //for(int i=10;i<10;i++)
+          
+          div.animate({height:'300px', opacity:'0.4'}, 5000);
+          div.animate({width:'300px', opacity:'0.8'},5000);
+          div.animate({height:'100px', opacity:'0.4'},5000);
+          div.animate({width:'100px', opacity:'0.8'},5000);
+
+         
+    });
+});
+
+    </script>
+
+</head>
+<body>
+   
+    <button>Start animation</button>
+    <div style="background: #98bf21;height: 100px;width: 100px;position: absolute;"></div>
+
+</body>
+</html>
